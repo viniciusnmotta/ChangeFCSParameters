@@ -1,9 +1,9 @@
 # Change Parameter Names in .FCS file
 This repository contains script to change names and parameters in .fcs files.
 You can run this script locally in your computer by type the following commands in Rstudio:
-1. Install.packages(shiny)
+1. install.packages(shiny)
 2. library(shiny)
-3. runGitHub("ChangeFCSParameters","vinicius.n.motta")
+3. runGitHub("ChangeFCSParameters","viniciusnmotta")
 
 The script will open an interface on your web browser.
 
