@@ -54,8 +54,8 @@ server=function(input,output){
   
   v<-reactiveValues(counts=0)
   
-  setwd("~/")
-  volumes=c(home=getwd())
+  setwd("/")
+  volumes=c(home=getwd(),C="C:",D="D:",E="E:",F="F:")
   shinyDirChoose(input,id = "dir2",roots=volumes)
   
   dir<-reactive(parseDirPath(volumes,input$dir2))
