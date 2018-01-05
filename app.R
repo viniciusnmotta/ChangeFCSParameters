@@ -54,7 +54,7 @@ server=function(input,output){
   
   v<-reactiveValues(counts=0)
   
-  setwd("~/")
+  setwd("~")
   volumes=c(home=getwd())
   shinyDirChoose(input,id = "dir2",roots=volumes)
   
