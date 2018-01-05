@@ -5,6 +5,11 @@ if(!require(rhandsontable)){install.packages("rhandsontable")}
 if(!require(shinyFiles)){install.packages("shinyFiles")}
 if(!require(flowCore)){biocLite("flowCore")}
 
+library("shiny")
+library("rhandsontable")
+library("shinyFiles")
+library("flowCore")
+
 
 ui=fluidPage(
   titlePanel("Change the Names of Channels and Parameters in .fcs Files"),
