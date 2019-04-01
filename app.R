@@ -84,7 +84,7 @@ ChangeFCSParameters <- function(ff, dt, dir) {
     idx = match(colnames(ff@description$SPILLOVER), dt[,1])
     colnames(ff@description$SPILLOVER) <- dt[idx,3]
     message("SPILLOVER changed")
-  } else if(!is.null(fcs@description$COMP)) {
+  } else if(!is.null(ff@description$COMP)) {
     idx = match(colnames(ff@description$COMP), dt[,1])
     colnames(ff@description$COM) <- dt[idx,3]
     message("COMP changed")
