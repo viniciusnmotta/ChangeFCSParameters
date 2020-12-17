@@ -1,9 +1,10 @@
-source("https://bioconductor.org/biocLite.R")
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
 
 if(!require(shiny)){install.packages("shiny")}
 if(!require(rhandsontable)){install.packages("rhandsontable")}
 if(!require(shinyFiles)){install.packages("shinyFiles")}
-if(!require(flowCore)){biocLite("flowCore")}
+if(!require(flowCore)){BiocManager::install("flowCore")}
 
 library("shiny")
 library("rhandsontable")
